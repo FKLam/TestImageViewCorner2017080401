@@ -15,6 +15,7 @@
 		588099061F341C8800697253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588099041F341C8800697253 /* LaunchScreen.storyboard */; };
 		588099111F341C8800697253 /* TestImageViewCorner2017080401Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 588099101F341C8800697253 /* TestImageViewCorner2017080401Tests.m */; };
 		5880991C1F341C8800697253 /* TestImageViewCorner2017080401UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880991B1F341C8800697253 /* TestImageViewCorner2017080401UITests.m */; };
+		58D43D751F341E8000F25ECF /* UIImage+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D43D741F341E8000F25ECF /* UIImage+Corner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		588099171F341C8800697253 /* TestImageViewCorner2017080401UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestImageViewCorner2017080401UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880991B1F341C8800697253 /* TestImageViewCorner2017080401UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageViewCorner2017080401UITests.m; sourceTree = "<group>"; };
 		5880991D1F341C8800697253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D43D731F341E8000F25ECF /* UIImage+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Corner.h"; sourceTree = "<group>"; };
+		58D43D741F341E8000F25ECF /* UIImage+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Corner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		588098F51F341C8800697253 /* TestImageViewCorner2017080401 */ = {
 			isa = PBXGroup;
 			children = (
+				58D43D721F341DE400F25ECF /* ImageViewCorner */,
 				588098F91F341C8800697253 /* AppDelegate.h */,
 				588098FA1F341C8800697253 /* AppDelegate.m */,
 				588098FC1F341C8800697253 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				5880991D1F341C8800697253 /* Info.plist */,
 			);
 			path = TestImageViewCorner2017080401UITests;
+			sourceTree = "<group>";
+		};
+		58D43D721F341DE400F25ECF /* ImageViewCorner */ = {
+			isa = PBXGroup;
+			children = (
+				58D43D731F341E8000F25ECF /* UIImage+Corner.h */,
+				58D43D741F341E8000F25ECF /* UIImage+Corner.m */,
+			);
+			path = ImageViewCorner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +220,8 @@
 				TargetAttributes = {
 					588098F21F341C8800697253 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = ZASED3YPE7;
+						ProvisioningStyle = Manual;
 					};
 					5880990B1F341C8800697253 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -273,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D43D751F341E8000F25ECF /* UIImage+Corner.m in Sources */,
 				588098FE1F341C8800697253 /* ViewController.m in Sources */,
 				588098FB1F341C8800697253 /* AppDelegate.m in Sources */,
 				588098F81F341C8800697253 /* main.m in Sources */,
@@ -424,10 +439,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZASED3YPE7;
 				INFOPLIST_FILE = TestImageViewCorner2017080401/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aomygod.com.TestImageViewCorner2017080401;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aomygod.aomaijia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f8d76c6a-abe2-4f15-8704-17f041646749";
+				PROVISIONING_PROFILE_SPECIFIER = Development_Profile;
 			};
 			name = Debug;
 		};
@@ -435,10 +455,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZASED3YPE7;
 				INFOPLIST_FILE = TestImageViewCorner2017080401/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aomygod.com.TestImageViewCorner2017080401;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aomygod.aomaijia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f8d76c6a-abe2-4f15-8704-17f041646749";
+				PROVISIONING_PROFILE_SPECIFIER = Development_Profile;
 			};
 			name = Release;
 		};
@@ -507,6 +532,7 @@
 				588099221F341C8800697253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		588099231F341C8800697253 /* Build configuration list for PBXNativeTarget "TestImageViewCorner2017080401Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +541,7 @@
 				588099251F341C8800697253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		588099261F341C8800697253 /* Build configuration list for PBXNativeTarget "TestImageViewCorner2017080401UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +550,7 @@
 				588099281F341C8800697253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
